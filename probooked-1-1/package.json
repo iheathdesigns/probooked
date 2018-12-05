@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.6.1",
+    "gtfs-realtime-bindings": "0.0.4",
+    "gtfs-to-html": "^0.14.5",
     "react": "^16.6.3",
     "react-document-title": "2.0.3",
     "react-dom": "^16.6.3",
