@@ -5,7 +5,14 @@ import TextField from '@material-ui/core/TextField';
 import './App.css';
 import Radios from './Radios.js';
 import Select from './Select.js';
+import mapboxgl from 'mapbox-gl';
 //import Text from './Text.js';
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ2hvc3RiZWFyIiwiYSI6ImNqcGJob2lnYjJ3NWIzc29iamtqM255a3EifQ.Rx5PqIIlZX47jOBgLjoD0A';
+const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9'
+});
 
 const cityChoices = [
   'NYC',
