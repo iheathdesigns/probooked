@@ -3,8 +3,8 @@ import NavBar from './components/NavBar';
 import SearchForm from './components/SearchForm';
 import TextField from '@material-ui/core/TextField';
 import './App.css';
-import Radios from './Radios.js';
-import Select from './Select.js';
+/*import Radios from './Radios.js';
+import Select from './Select.js';*/
 import mapboxgl from 'mapbox-gl';
 //import Text from './Text.js';
 
@@ -14,7 +14,7 @@ const map = new mapboxgl.Map({
     style: 'mapbox://styles/mapbox/streets-v9'
 });
 
-const cityChoices = [
+/*const cityChoices = [
   'NYC',
   'ATL',
   'LA',
@@ -24,7 +24,7 @@ const cityRoutes = [
   'Bus',
   'Subway',
   'Trolley',
-];
+];*/
 const PLU_CODE = /^\d\d\d\d$/; // four digits
 const DESTINATION = /^\d+$/;
 const computeSubmitEnabled = ({code, destination}) => PLU_CODE.test(code) && DESTINATION.test(destination);
@@ -99,29 +99,8 @@ class App extends Component {
       <form name="react3" onSubmit={this.onSubmit}>
 
       <SearchForm />
-      <Select
-      label="Choose Your City"
-      name="cityChoice"
-      values={cityChoices}
-      currentValue={cityChoice}
-      onChange={this.onChangeCity}
-      />
-      <Radios
-      label="Choose Your Mode of Transport"
-       name="cityRoute"
-       values={cityRoutes}
-       currentValue={cityRoute}
-        onChange={this.onChangeOption}
-      />
-      <fieldset>
-<TextField
-  label="Destination"
-  name="destination"
-  value={destination}
-  feedback={destinationResult}
-  onChange={this.onChangeDestination}
-/>
-</fieldset>
+
+      
         <button type="submit" disabled={!isSubmitEnabled}>Submit</button>
       </form>
       </div>

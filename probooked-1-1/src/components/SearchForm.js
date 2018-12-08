@@ -11,19 +11,10 @@ function SearchForm() {
         Enter Details Below
       </Typography>
       <Grid container spacing={24}>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            required
-            id="firstName"
-            name="firstName"
-            label="First name"
-            fullWidth
-            autoComplete="fname"
-          />
-        </Grid>
 
-        </Grid>
-        <Grid item xs={12}>
+
+
+        <Grid item xs={6} sm={4}>
           <TextField
             required
             id="address1"
@@ -35,30 +26,12 @@ function SearchForm() {
         </Grid>
 
 
-        <Grid item xs={12} sm={6}>
-          <TextField
-            required
-            id="city"
-            name="city"
-            label="City"
-            fullWidth
-            autoComplete="billing address-level2"
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
+
+        <Grid item xs={6} sm={4}>
           <TextField id="state" name="state" label="State" fullWidth />
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            required
-            id="zip"
-            name="zip"
-            label="Zip code"
-            fullWidth
-            autoComplete="billing postal-code"
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
+
+        <Grid item xs={6} sm={4}>
           <TextField
             required
             id="destination"
@@ -68,7 +41,7 @@ function SearchForm() {
             autoComplete="user destination"
           />
         </Grid>
-
+        </Grid>
 
     </React.Fragment>
   );

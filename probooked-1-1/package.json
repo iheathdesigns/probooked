@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.6.1",
+    "@material-ui/icons": "^3.0.1",
     "gtfs-realtime-bindings": "0.0.4",
     "gtfs-to-html": "^0.14.5",
     "mapbox-gl": "^0.52.0-beta.1",
