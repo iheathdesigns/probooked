@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import NavBar from './components/NavBar';
 import SearchForm from './components/SearchForm';
-import TextField from '@material-ui/core/TextField';
+import MapboxShow from './components/MapboxShow';
 import './App.css';
 /*import Radios from './Radios.js';
 import Select from './Select.js';*/
-import mapboxgl from 'mapbox-gl';
+
 //import Text from './Text.js';
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiZ2hvc3RiZWFyIiwiYSI6ImNqcGJob2lnYjJ3NWIzc29iamtqM255a3EifQ.Rx5PqIIlZX47jOBgLjoD0A';
-const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9'
-});
+
 
 /*const cityChoices = [
   'NYC',
@@ -100,7 +96,7 @@ class App extends Component {
 
       <SearchForm />
 
-      
+      <MapboxShow />
         <button type="submit" disabled={!isSubmitEnabled}>Submit</button>
       </form>
       </div>

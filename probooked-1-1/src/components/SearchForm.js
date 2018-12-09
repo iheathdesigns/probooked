@@ -17,9 +17,9 @@ function SearchForm() {
         <Grid item xs={6} sm={4}>
           <TextField
             required
-            id="address1"
-            name="address1"
-            label="Address line 1"
+            id="address"
+            name="address"
+            label="Address"
             fullWidth
             autoComplete="billing address-line1"
           />
@@ -40,6 +40,7 @@ function SearchForm() {
             fullWidth
             autoComplete="user destination"
           />
+          
         </Grid>
         </Grid>
 
