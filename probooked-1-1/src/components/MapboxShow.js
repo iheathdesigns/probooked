@@ -1,15 +1,15 @@
 import React from 'react';
 import mapboxgl from 'mapbox-gl';
 import MapboxDirections from 'mapbox-gl-directions'
-import * as actions from 'actions';
-import directionsStyle from 'directions_style';
+import * as actions from '../actions';
+import directionsStyle from '../directions_style';
 import thunk from 'redux-thunk';
 import utils from 'utils';
 import rootReducer from 'reducers';
 import { decode } from 'polyline';
 import { createStore, applyMiddleware, bindActionCreators} from 'redux';
-import Inputs from 'form/inputs';
-import Instructions from 'form/instructions';
+import Inputs from '../form/inputs';
+import Instructions from '../form/instructions';
 
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2hvc3RiZWFyIiwiYSI6ImNqcGJob2lnYjJ3NWIzc29iamtqM255a3EifQ.Rx5PqIIlZX47jOBgLjoD0A';
