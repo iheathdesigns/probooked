@@ -12,7 +12,7 @@ import Inputs from '../form/inputs';
 import Instructions from '../form/instructions';
 
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiZ2hvc3RiZWFyIiwiYSI6ImNqcGJob2lnYjJ3NWIzc29iamtqM255a3EifQ.Rx5PqIIlZX47jOBgLjoD0A';
+mapboxgl.accessToken = 'TOKEN';
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
